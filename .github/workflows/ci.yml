@@ -25,3 +25,6 @@ jobs:
         env:
           PYTHONPATH: .
         run: pytest tests/ -v
+
+      - name: Check data quality
+        run: python check_data.py
